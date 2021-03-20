@@ -1,0 +1,26 @@
+name: "Pylint"
+description: "Execute pylint on the current code"
+inputs:
+  python-root-list:
+    description: "A list of all paths to check"
+    required: false
+    default: "."
+  requirements-file:
+    description: "List of requirement files to install before running pylint"
+    required: false
+    default: ""
+  extra-options:
+    description: "Extra options to pass to pylint"
+    required: false
+    default: ""
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.python-root-list }}
+    - ${{ inputs.requirements-file }}
+    - ${{ inputs.extra-options }}
+branding:
+  icon: "terminal"
+  color: "white"
