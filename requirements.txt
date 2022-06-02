@@ -4,7 +4,9 @@
 #
 #    pip-compile
 #
-astroid==2.9.3
+astroid==2.11.5
+    # via pylint
+dill==0.3.5.1
     # via pylint
 isort==5.10.1
     # via pylint
@@ -14,14 +16,12 @@ mccabe==0.6.1
     # via pylint
 platformdirs==2.5.1
     # via pylint
-pylint==2.12.2
+pylint==2.14.0
     # via -r requirements.in
-toml==0.10.2
+tomli==2.0.1
     # via pylint
-typing-extensions==4.1.1
-    # via
-    #   astroid
-    #   pylint
+tomlkit==0.11.0
+    # via pylint
 wrapt==1.13.3
     # via astroid
 
