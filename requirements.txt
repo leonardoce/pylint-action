@@ -4,7 +4,9 @@
 #
 #    pip-compile
 #
-astroid==2.9.3
+astroid==2.15.0
+    # via pylint
+dill==0.3.6
     # via pylint
 isort==5.10.1
     # via pylint
@@ -14,16 +16,9 @@ mccabe==0.6.1
     # via pylint
 platformdirs==2.5.1
     # via pylint
-pylint==2.12.2
+pylint==2.17.1
     # via -r requirements.in
-toml==0.10.2
+tomlkit==0.11.6
     # via pylint
-typing-extensions==4.1.1
-    # via
-    #   astroid
-    #   pylint
-wrapt==1.13.3
+wrapt==1.15.0
     # via astroid
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
